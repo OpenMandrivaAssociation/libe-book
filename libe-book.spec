@@ -17,6 +17,7 @@ BuildRequires: pkgconfig(icu-io)
 BuildRequires: pkgconfig(cppunit)
 BuildRequires: pkgconfig(zlib)
 BuildRequires: gperf
+BuildRequires: boost-devel
 
 %description
 Library for import of reflowable e-book formats
