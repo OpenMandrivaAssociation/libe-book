@@ -17,6 +17,7 @@ BuildRequires: pkgconfig(icu-io)
 BuildRequires: pkgconfig(cppunit)
 BuildRequires: pkgconfig(zlib)
 BuildRequires: gperf
+BuildRequires: doxygen
 BuildRequires: boost-devel
 
 %description
