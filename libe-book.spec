@@ -1,12 +1,12 @@
-%define api 0.0
-%define major 0
+%define api 0.1
+%define major 1
 %define libname %mklibname e-book %{api} %{major}
 %define devname %mklibname e-book -d
 
 Name: libe-book
-Version: 0.0.2
-Release: 4
-Source0: http://netcologne.dl.sourceforge.net/project/libebook/libe-book-%{version}/libe-book-%{version}.tar.bz2
+Version: 0.1.1
+Release: 1
+Source0: http://netcologne.dl.sourceforge.net/project/libebook/libe-book-%{version}/libe-book-%{version}.tar.xz
 Summary: Library for import of reflowable e-book formats
 URL: http://libebook.sf.net/
 License: MPL 2.0
