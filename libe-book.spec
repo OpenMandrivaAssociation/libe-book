@@ -14,6 +14,7 @@ Group: System/Libraries
 BuildRequires: pkgconfig(libwpd-0.9)
 BuildRequires: pkgconfig(libxml-2.0)
 BuildRequires: pkgconfig(icu-io)
+BuildRequires: pkgconfig(librevenge-0.0)
 BuildRequires: pkgconfig(cppunit)
 BuildRequires: pkgconfig(zlib)
 BuildRequires: gperf
