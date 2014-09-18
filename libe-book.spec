@@ -11,7 +11,6 @@ Summary: Library for import of reflowable e-book formats
 URL: http://libebook.sf.net/
 License: MPL 2.0
 Group: System/Libraries
-BuildRequires: pkgconfig(libwpd-0.10)
 BuildRequires: pkgconfig(libxml-2.0)
 BuildRequires: pkgconfig(icu-io)
 BuildRequires: pkgconfig(librevenge-0.0)
