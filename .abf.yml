@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   libe-book-0.1.1.tar.xz: dda3eba72b0abc5dcc1b8b3c99dbd1ea25b8007f
+sources:
+  libe-book-0.1.2.tar.xz: 950ee08e7a41585636aebb7774fdc6f05817a18c
