@@ -5,7 +5,7 @@
 
 Name: libe-book
 Version: 0.1.2
-Release: 5
+Release: 11
 Source0: http://netcologne.dl.sourceforge.net/project/libebook/libe-book-%{version}/libe-book-%{version}.tar.xz
 Summary: Library for import of reflowable e-book formats
 URL: http://libebook.sf.net/
@@ -40,8 +40,11 @@ Development files (Headers etc.) for %{name}.
 
 %prep
 %setup -q
-export CC=gcc
-export CXX=g++
+aclocal -I m4
+autoheader
+automake -a
+autoconf
+
 %configure --disable-werror LIBS=-lboost_system
 
 %build
