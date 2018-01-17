@@ -44,6 +44,7 @@ aclocal -I m4
 autoheader
 automake -a
 autoconf
+
 %configure --disable-werror LIBS=-lboost_system
 
 %build
