@@ -4,8 +4,8 @@
 %define devname %mklibname e-book -d
 
 Name: libe-book
-Version: 0.1.2
-Release: 11
+Version: 0.1.3
+Release: 1
 Source0: http://netcologne.dl.sourceforge.net/project/libebook/libe-book-%{version}/libe-book-%{version}.tar.xz
 Summary: Library for import of reflowable e-book formats
 URL: http://libebook.sf.net/
@@ -16,19 +16,20 @@ BuildRequires: pkgconfig(icu-io)
 BuildRequires: pkgconfig(librevenge-0.0)
 BuildRequires: pkgconfig(cppunit)
 BuildRequires: pkgconfig(zlib)
+BuildRequires: pkgconfig(liblangtag)
 BuildRequires: gperf
 BuildRequires: doxygen
 BuildRequires: boost-devel
 
 %description
-Library for import of reflowable e-book formats
+Library for import of reflowable e-book formats.
 
 %package -n %{libname}
 Summary: Library for import of reflowable e-book formats
 Group: System/Libraries
 
 %description -n %{libname}
-Library for import of reflowable e-book formats
+Library for import of reflowable e-book formats.
 
 %package -n %{devname}
 Summary: Development files for %{name}
