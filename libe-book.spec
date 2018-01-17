@@ -16,6 +16,7 @@ BuildRequires: pkgconfig(icu-io)
 BuildRequires: pkgconfig(librevenge-0.0)
 BuildRequires: pkgconfig(cppunit)
 BuildRequires: pkgconfig(zlib)
+BuildRequires: pkgconfig(liblangtag)
 BuildRequires: gperf
 BuildRequires: doxygen
 BuildRequires: boost-devel
