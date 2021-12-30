@@ -5,7 +5,7 @@
 
 Name: libe-book
 Version: 0.1.3
-Release: 4
+Release: 5
 Source0: http://netcologne.dl.sourceforge.net/project/libebook/libe-book-%{version}/libe-book-%{version}.tar.xz
 Summary: Library for import of reflowable e-book formats
 URL: http://libebook.sf.net/
