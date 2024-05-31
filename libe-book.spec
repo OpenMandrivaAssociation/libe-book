@@ -1,11 +1,12 @@
 %define api 0.1
 %define major 1
-%define libname %mklibname e-book %{api} %{major}
+%define oldlibname %mklibname e-book %{api} %{major}
+%define libname %mklibname e-book
 %define devname %mklibname e-book -d
 
 Name: libe-book
 Version: 0.1.3
-Release: 7
+Release: 8
 Source0: http://netcologne.dl.sourceforge.net/project/libebook/libe-book-%{version}/libe-book-%{version}.tar.xz
 Summary: Library for import of reflowable e-book formats
 URL: http://libebook.sf.net/
@@ -28,6 +29,8 @@ Library for import of reflowable e-book formats.
 %package -n %{libname}
 Summary: Library for import of reflowable e-book formats
 Group: System/Libraries
+# Renamed after 5.0
+%rename %{oldlibname}
 
 %description -n %{libname}
 Library for import of reflowable e-book formats.
