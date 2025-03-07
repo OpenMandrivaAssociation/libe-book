@@ -1,0 +1,12 @@
+diff -up libe-book-0.1.3/configure.ac.omv~ libe-book-0.1.3/configure.ac
+--- libe-book-0.1.3/configure.ac.omv~	2025-03-07 19:27:52.331075935 +0100
++++ libe-book-0.1.3/configure.ac	2025-03-07 19:28:02.580464483 +0100
+@@ -127,7 +127,7 @@ AC_SUBST([BOOST_CFLAGS])
+ # ========
+ # Find icu
+ # ========
+-PKG_CHECK_MODULES([ICU], [icu-i18n])
++PKG_CHECK_MODULES([ICU], [icu-i18n icu-uc])
+ AC_SUBST(ICU_CFLAGS)
+ AC_SUBST(ICU_LIBS)
+ 

@@ -13,6 +13,7 @@ URL: https://libebook.sf.net/
 License: MPL 2.0
 Group: System/Libraries
 Patch0: http://svnweb.mageia.org/packages/cauldron/libe-book/current/SOURCES/libe-book-0.1.3-icu-true.patch
+Patch1: libe-book-icu-76.patch
 BuildRequires: pkgconfig(libxml-2.0)
 BuildRequires: pkgconfig(icu-io)
 BuildRequires: pkgconfig(librevenge-0.0)
