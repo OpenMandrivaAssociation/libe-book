@@ -53,7 +53,7 @@ Development files (Headers etc.) for %{name}.
 %autosetup -p1
 
 %build
-%configure --disable-werror LIBS=-lboost_system
+%configure --disable-werror
 sed -i \
 	-e 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' \
 	-e 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' \
