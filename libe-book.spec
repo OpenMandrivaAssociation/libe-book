@@ -5,15 +5,15 @@
 %define devname %mklibname e-book -d
 
 Name: libe-book
-Version: 0.1.3
-Release: 13
-Source0: http://netcologne.dl.sourceforge.net/project/libebook/libe-book-%{version}/libe-book-%{version}.tar.xz
+Version: 0.1.4
+Release: 1
+Source0: https://downloads.sourceforge.net/project/libebook/libe-book-%{version}/libe-book-%{version}.tar.xz
 Summary: Library for import of reflowable e-book formats
 URL: https://libebook.sf.net/
 License: MPL 2.0
 Group: System/Libraries
-Patch0: http://svnweb.mageia.org/packages/cauldron/libe-book/current/SOURCES/libe-book-0.1.3-icu-true.patch
-Patch1: libe-book-icu-76.patch
+# icu-i18n.pc does not pull icu-uc, which the charset converter needs
+Patch0: libe-book-icu-76.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool-base
@@ -54,15 +54,18 @@ Development files (Headers etc.) for %{name}.
 
 %build
 %configure --disable-werror
+# slibtool writes slibtool.cfg, not a GNU libtool script.
+if [ -f libtool ]; then
 sed -i \
 	-e 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' \
 	-e 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' \
 	libtool
+fi
 
-%make_build
+%make_build LIBTOOL=slibtool-shared
 
 %install
-%make_install
+%make_install LIBTOOL=slibtool-shared
 
 %files
 %{_bindir}/*
